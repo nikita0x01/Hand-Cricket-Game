@@ -37,4 +37,5 @@ Play against the computer, test your luck, and enjoy the classic childhood game 
 
 1. Clone this repository  
    ```bash
-   git clone https://github.com/your-username/hand-cricket-game.git
+   git clone https://github.com/nikita0x01/Hand-Cricket-Game.git
+
