@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hand Cricket Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Runs Table</h2>
+    <div class="runs">
+      <div class="run-box">1 Run</div>
+      <div class="run-box">2 Runs</div>
+      <div class="run-box">3 Runs</div>
+      <div class="run-box">4 Runs</div>
+      <div class="run-box">5 Runs</div>
+      <div class="run-box">6 Runs</div>
+    </div>
+  </div>
+
+  <!-- Main Game -->
+  <div class="game">
+    <button class="reset-btn" onclick="resetGame()">Restart</button>
+    <h1>Hand Cricket</h1>
+    <p id="innings-status" class="highlight">Player Batting (Innings 1)</p>
+    <p>Select your run (1–6):</p>
+
+    <div class="choices">
+      <button class="choice-btn" onclick="play(1)">1</button>
+      <button class="choice-btn" onclick="play(2)">2</button>
+      <button class="choice-btn" onclick="play(3)">3</button>
+      <button class="choice-btn" onclick="play(4)">4</button>
+      <button class="choice-btn" onclick="play(5)">5</button>
+      <button class="choice-btn" onclick="play(6)">6</button>
+    </div>
+
+    <div class="status">
+      <p>You chose: <span id="player-choice">-</span></p>
+      <p>Computer chose: <span id="computer-choice">-</span></p>
+      <p id="result">-</p>
+    </div>
+
+    <div class="score">
+      <p>Player Score: <span id="player-score">0</span></p>
+      <p>Computer Score: <span id="computer-score">0</span></p>
+      <p id="target"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
